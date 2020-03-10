@@ -1,0 +1,30 @@
+{
+    "name": "csharp-netcore-extensionpack",
+    "displayName": "C# .Net Core Extension Pack",
+    "description": "15 extensiones indispensables para programar con C# y .NET Core",
+    "publisher": "jolhe",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionPack": [ 
+        "formulahendry.dotnet",
+        "matijarmk.dotnet-core-commands",
+        "jchannon.csharpextensions",
+        "Fudge.auto-using",
+        "jmrog.vscode-nuget-package-manager",
+        "jesschadwick.nuget-reverse-package-search",
+        "schneiderpat.aspnet-helper",
+        "jorgeserrano.vscode-csharp-snippets",
+        "doggy8088.netcore-snippets",
+        "firefox.scaffold",
+        "adrianwilczynski.asp-net-core-switcher",
+        "k--kato.docomment",
+        "formulahendry.dotnet-test-explorer",
+        "ms-mssql.mssql",
+        "aaron-bond.better-comments"
+    ]
+}
