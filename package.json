@@ -3,7 +3,7 @@
     "displayName": "C# .Net Core Extension Pack",
     "description": "15 extensiones indispensables para programar con C# y .NET Core",
     "publisher": "jolhe",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "repository": "https://github.com/jolhe006/csharp-netcore-extensionpack.git",
     "engines": {
         "vscode": "^1.42.0"
@@ -12,6 +12,7 @@
         "Extension Packs"
     ],
     "extensionPack": [ 
+        "ms-dotnettools.csharp",
         "formulahendry.dotnet",
         "matijarmk.dotnet-core-commands",
         "jchannon.csharpextensions",
