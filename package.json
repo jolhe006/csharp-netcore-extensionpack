@@ -4,7 +4,7 @@
     "description": "15 extensiones indispensables para programar con C# y .NET Core",
     "icon": "vscode-netcore.png",
     "publisher": "jolhe",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/jolhe006/csharp-netcore-extensionpack.git"
