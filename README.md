@@ -2,8 +2,9 @@
 
 ## C# .Net Core Extension Pack
 
-15 extensiones indispensables para programar con C# y .NET Core:
+16 extensiones indispensables para programar con C# y .NET Core:
 
+* C# for Visual Studio Code
 * .NET Core Tools
 * Dotnet Core commands
 * Extensiones para C#

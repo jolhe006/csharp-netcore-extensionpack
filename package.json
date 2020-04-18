@@ -2,9 +2,13 @@
     "name": "csharp-netcore-extensionpack",
     "displayName": "C# .Net Core Extension Pack",
     "description": "15 extensiones indispensables para programar con C# y .NET Core",
+    "icon": "vscode-netcore.png",
     "publisher": "jolhe",
     "version": "0.0.3",
-    "repository": "https://github.com/jolhe006/csharp-netcore-extensionpack.git",
+    "repository": {
+        "type": "git", 
+        "url": "https://github.com/jolhe006/csharp-netcore-extensionpack.git"
+    },
     "engines": {
         "vscode": "^1.42.0"
     },
