@@ -25,11 +25,11 @@ jobs:
 
       - name: Push to Azure Repos
         env:
-          AZURE_PAT: ${{ secrets::AZURE_DEVOPS_PAT }}
+          AZURE_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
         run: |
-          # Format: https://<PAT>@dev.azure.com/<Org>/<Project>/_git/<Repo>
+          # Format: https://<PAT>@://azure.com<Org>/<Project>/_git/<Repo>
           # Replace the URL below with your target Azure Repo URL (exclude the 'https://' prefix)
-          TARGET_REPO="://azure.com"
+          TARGET_REPO="://azure.comYOUR_ORG/YOUR_PROJECT/_git/YOUR_REPO"
           
           git remote add azure "https://$AZURE_PAT@$TARGET_REPO"
           git push azure refs/remotes/origin/*:refs/heads/* --tags --force
