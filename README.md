@@ -7,11 +7,11 @@
 * C# for Visual Studio Code
 * .NET Core Tools
 * Dotnet Core commands
-* Extensiones para C#
-* Auto-Using for C#
+* ~~Extensiones para C#~~
+* ~~Auto-Using for C#~~
 * NuGet Package Manager
 * NuGet Reverse Package Search
-* ASP.NET Helper
+* ~~ASP.NET Helper~~
 * C# Snippets
 * Essential ASP.NET Core Snippets
 * ASP.NET Core Scaffolding
