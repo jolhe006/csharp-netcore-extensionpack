@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Sync to Azure DevOps
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: ["master", "main"]
+  pull_request:
+    branches: [ "master", "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:  
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history for all branches and tags
+
+      - name: Push to Azure Repos
+        env:
+          AZURE_PAT: ${{ secrets::AZURE_DEVOPS_PAT }}
+        run: |
+          # Format: https://<PAT>@dev.azure.com/<Org>/<Project>/_git/<Repo>
+          # Replace the URL below with your target Azure Repo URL (exclude the 'https://' prefix)
+          TARGET_REPO="://azure.com"
+          
+          git remote add azure "https://$AZURE_PAT@$TARGET_REPO"
+          git push azure refs/remotes/origin/*:refs/heads/* --tags --force
